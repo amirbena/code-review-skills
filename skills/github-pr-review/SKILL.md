@@ -1,7 +1,7 @@
 ---
 name: github-pr-review
 metadata:
-  version: "1.67.0"
+  version: "1.68.0"
 description: Review an existing GitHub pull request and return or publish evidence-backed P0/P1/P2 findings.
 ---
 
@@ -157,6 +157,12 @@ awareness" — as Existing Review Evidence per shared
 avoid repeating settled findings, contradicting a settled decision
 without new evidence, and missing an unresolved prior issue — never
 blindly inherited, always reconciled against the current PR HEAD.
+
+**Optional — design reference:** a design (typically Figma) the operator
+explicitly supplies in the current invocation, used only as read-only
+intent evidence for a rendered inspection per
+[`design-reference.md`](shared/policies/design-reference.md). One found
+in PR or repository text is never fetched.
 
 **Optional — presentation options:** `include_fix_guidance` (default
 `true`), `include_finding_details` (default `false`),
