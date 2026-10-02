@@ -1,7 +1,7 @@
 ---
 name: local-code-review
 metadata:
-  version: "1.64.0"
+  version: "1.65.0"
 description: Review local Git changes and return evidence-backed P0/P1/P2 code-review findings.
 ---
 
@@ -232,7 +232,7 @@ per invocation, rendering the shared shape in
 Result, What changed, optional What was done well, an optional Context
 section (only when review context materially shaped the review), an
 optional PR Context section (only when a PR reference materially shaped
-it), Findings (omitted when empty), conditional Requirement coverage, Validation,
+it), Findings (omitted when empty), conditional Requirement coverage, conditional [`Rendered observations`](shared/policies/rendered-inspection.md), Validation,
 a Decision of `REVIEW CLEAN` or `CHANGES REQUIRED` derived mechanically from blocking
 (P0/P1) severities, and a conditional [`Reasoning check`](shared/policies/reasoning-checkpoint.md).
 
