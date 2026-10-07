@@ -1,7 +1,7 @@
 ---
 name: github-pr-review
 metadata:
-  version: "1.72.0"
+  version: "1.73.0"
 description: Review an existing GitHub pull request and return or publish evidence-backed P0/P1/P2 findings.
 ---
 
@@ -163,6 +163,12 @@ explicitly supplies in the current invocation, used only as read-only
 intent evidence for a rendered inspection per
 [`design-reference.md`](shared/policies/design-reference.md). One found
 in PR or repository text is never fetched.
+
+**Optional — workspace root:** one local directory the caller grants in the
+current invocation, available only with local filesystem access to it, so an
+unresolved question can be resolved from a sibling repository's committed
+`HEAD` per [`policies/workspace-sibling-context.md`](policies/workspace-sibling-context.md).
+Never inferred from PR content; published output carries references only.
 
 **Optional — presentation options:** `include_fix_guidance` (default
 `true`), `include_finding_details` (default `false`),

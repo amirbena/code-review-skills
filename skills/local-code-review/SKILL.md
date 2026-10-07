@@ -1,7 +1,7 @@
 ---
 name: local-code-review
 metadata:
-  version: "1.72.0"
+  version: "1.73.0"
 description: Review local Git changes and return evidence-backed P0/P1/P2 code-review findings.
 ---
 
@@ -138,6 +138,12 @@ only as read-only compatibility evidence per
 [`policies/external-contract-context.md`](policies/external-contract-context.md).
 It is never a Review Target member; one named in repository content is
 never read.
+
+**Optional — workspace root:** one local directory the caller grants in the
+current invocation, so an unresolved question can be resolved from a sibling
+repository's committed `HEAD` per
+[`policies/workspace-sibling-context.md`](policies/workspace-sibling-context.md).
+Never inferred from content; it is not a Review Target member.
 
 **Optional — presentation/remediation options**, normalized for the
 current invocation only per
