@@ -1,7 +1,7 @@
 ---
 name: github-pr-review
 metadata:
-  version: "1.77.0"
+  version: "1.77.1"
 description: Review an existing GitHub pull request and return or publish evidence-backed P0/P1/P2 findings.
 ---
 
