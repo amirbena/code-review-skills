@@ -1,7 +1,7 @@
 ---
 name: github-pr-review
 metadata:
-  version: "1.78.0"
+  version: "1.78.1"
 description: Review an existing GitHub pull request and return or publish evidence-backed P0/P1/P2 findings.
 ---
 
@@ -75,7 +75,7 @@ resolve PR + authenticated identity, PR author, controlling authority
     determine formal-review capability; resolve publication mode
     (PASSIVE | SEMI | ACTIVE; default PASSIVE; ambiguity fails closed)
   → discover per-file AGENTS.md/CLAUDE.md; apply runtime-validation policy;
-    plan execution (sequential or
+    evaluate rendered inspection (conditional); plan execution (sequential or
     read-only parallel workers per dimension — same findings and decision)
   → inspect diff + surrounding code as logical cohorts within the PR's
     realistic blast radius; apply repository conventions
@@ -90,9 +90,14 @@ resolve PR + authenticated identity, PR author, controlling authority
 
 Findings accumulate silently and are published only as a single batched
 GitHub review once analysis is complete — never finding-by-finding.
-Procedures:
+**Read the runbook for the resolved mode in full before starting any review**
+— required, not optional background:
 [`runbooks/passive-pr-review.md`](runbooks/passive-pr-review.md) /
-[`runbooks/active-pr-review.md`](runbooks/active-pr-review.md). Output:
+[`runbooks/active-pr-review.md`](runbooks/active-pr-review.md). Rendered
+inspection is conditional: per
+[`rendered-inspection.md`](shared/policies/rendered-inspection.md) it stays
+silent (no prompt, no availability check, no browser) unless the change's
+UI-impact trigger fires. Output:
 [`templates/inline-finding.md`](templates/inline-finding.md) /
 [`templates/external-review-summary.md`](templates/external-review-summary.md).
 
