@@ -1,7 +1,7 @@
 {
-  "content_manifest_hash": "418fdd2d422dd6d026c22c18a625d66049bafe3450af36e6cb1643a6b954d0a6",
+  "content_manifest_hash": "d968192106ab4f0a709d6bee8f822931ab701e6d5c0e392f054f68d94d6c1fb1",
   "schema_version": 1,
-  "source_commit": "b80e3832f7ff4393835253903adf8dcfe73de762",
+  "source_commit": "ad181066deb7be04a16b2e769f432f18c5dbe15e",
   "source_repository": "amirbena/code-review-skill",
-  "version": "1.82.0"
+  "version": "1.82.1"
 }
