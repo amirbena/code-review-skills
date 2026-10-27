@@ -1,7 +1,7 @@
 ---
 name: local-code-review
 metadata:
-  version: "1.80.6"
+  version: "1.81.0"
 description: Review local Git changes and return evidence-backed P0/P1/P2 code-review findings.
 ---
 
