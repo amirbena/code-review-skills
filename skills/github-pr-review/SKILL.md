@@ -1,7 +1,7 @@
 ---
 name: github-pr-review
 metadata:
-  version: "1.83.2"
+  version: "1.83.3"
 description: Review an existing GitHub pull request and return or publish evidence-backed P0/P1/P2 findings.
 ---
 
@@ -64,6 +64,16 @@ for review-action authority; the canonical policies own the rest.
   [`agent-delegation.md`](shared/policies/agent-delegation.md).
 
 ## Review procedure
+
+**Load first.** Before inspecting any diff, open every file in section 2
+(the only policy inventory) in full and confirm each; the phase-loaded group
+opens at its phase. Prefer the runtime's file-read facility, a file or small
+group per call, over shell output that can be cut off silently, and check
+each file's line count against its extent. On a short or truncated read,
+resume from the last verified line; only a failed recovery is
+`REVIEW INCOMPLETE`, per
+[`review-stopping-criteria.md`](shared/policies/review-stopping-criteria.md),
+"Bounded, resumable policy loading."
 
 A review resolves the PR, identity, and review mode, retrieves the complete
 required scope, reviews it, and constructs ONE review (body + inline
