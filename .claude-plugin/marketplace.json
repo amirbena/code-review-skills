@@ -8,7 +8,7 @@
     {
       "name": "code-review-skills",
       "source": "./",
-      "version": "3.1.0",
+      "version": "3.2.0",
       "description": "Read-only code review of local Git changes and GitHub PRs with evidence-backed P0/P1/P2 findings: review-core plus selectable review-* mini-skills."
     }
   ]
