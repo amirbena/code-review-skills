@@ -1,7 +1,7 @@
 ---
 name: review-core
 metadata:
-  version: "3.3.0"
+  version: "3.3.1"
 description: Read-only code review of a local Git change or a GitHub pull request. Returns evidence-backed P0/P1/P2 findings and one mechanical decision.
 ---
 

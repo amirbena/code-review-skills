@@ -1,7 +1,7 @@
 ---
 name: review-suggestions
 metadata:
-  version: "3.3.0"
+  version: "3.3.1"
 description: Adds a few non-blocking P2 suggestions on maintainability, design and hygiene. Never P0 or P1. Use when you want improvement ideas beyond blocking defects.
 ---
 

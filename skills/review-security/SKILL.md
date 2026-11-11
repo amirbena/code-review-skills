@@ -1,7 +1,7 @@
 ---
 name: review-security
 metadata:
-  version: "3.3.0"
+  version: "3.3.1"
 description: "Adds security depth to a code review: auth, injection, secrets, crypto, trust boundaries, dependencies. Use when a change touches those."
 ---
 
