@@ -1,7 +1,7 @@
 ---
 name: review-deep-investigation
 metadata:
-  version: "3.3.1"
+  version: "3.4.0"
 description: Lifts review-core's investigation bound with multi-hop tracing, root cause, affected tests and failure and null paths. Use when a suspicion needs more than one hop to settle.
 ---
 

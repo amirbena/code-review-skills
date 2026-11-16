@@ -1,7 +1,7 @@
 ---
 name: review-backend
 metadata:
-  version: "3.3.1"
+  version: "3.4.0"
 description: "Adds backend depth to a code review: API contracts, databases and migrations, concurrency, performance, deployment and config, including IaC, Kubernetes/Helm and CI/CD."
 ---
 

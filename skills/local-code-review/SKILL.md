@@ -1,7 +1,7 @@
 ---
 name: local-code-review
 metadata:
-  version: "3.3.1"
+  version: "3.4.0"
 description: Review local Git changes and return evidence-backed P0/P1/P2 code-review findings.
 ---
 
