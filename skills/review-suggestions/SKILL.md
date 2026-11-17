@@ -1,7 +1,7 @@
 ---
 name: review-suggestions
 metadata:
-  version: "3.5.0"
+  version: "3.5.1"
 description: Adds a few non-blocking P2 suggestions on maintainability, design and hygiene. Never P0 or P1. Use when you want improvement ideas beyond blocking defects.
 ---
 
@@ -28,8 +28,9 @@ triggers or S1–S5 and S10; those are `review-core`'s.
 
 1. **Look for suggestions** in the changed code, after the Core's review:
    - *maintainability* — a function or file that now does several jobs,
-     unclear naming, dead code the change leaves behind (duplication and
-     reimplementation belong to `review-core`'s "Reuse" rule);
+     unclear naming, dead code the change leaves behind (reimplementation
+     of existing logic belongs to `review-core`'s "Reuse" rule, and repetition
+     inside the change to its "Maintainability" rule);
    - *design* — a localized weakness: a responsibility in the wrong place, a
      leaky abstraction, a fragile coupling the change adds;
    - *hygiene* — a lower-risk test gap, misleading documentation or
